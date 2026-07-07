@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <FrameLayout
+            android:id="@+id/welcomeHero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/welcomeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/hero_slide_promo_main"
+                android:scaleType="matrix"
+                app:srcCompat="@drawable/hero_promo_yalaza" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_welcome_bottom_scrim" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnInstagram"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/contact_open_instagram"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_instagram_brand" />
+
+            <LinearLayout
+                android:id="@+id/scrollHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="28dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/scrollHintArrow"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:alpha="0.92"
+                    android:contentDescription="@string/home_scroll_hint"
+                    app:srcCompat="@drawable/ic_chevron_down"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:alpha="0.88"
+                    android:letterSpacing="0.04"
+                    android:text="@string/home_scroll_hint"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/homeContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="520dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bg_chicha_wall" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CC000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="28dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/welcome_food_logo" />
+
+                <TextView
+                    style="@style/Yalaza.Welcome.Slogan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/home_welcome_slogan" />
+
+                <TextView
+                    style="@style/Yalaza.Welcome.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/home_welcome_title" />
+
+                <TextView
+                    style="@style/Yalaza.Welcome.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/home_welcome_body" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOrderNow"
+                    style="@style/Yalaza.Welcome.OrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:minWidth="240dp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

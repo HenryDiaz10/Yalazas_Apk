@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Yalaza.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/combo_config_title" />
+
+        <TextView
+            style="@style/Yalaza.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/combo_config_subtitle" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/yalaza_surface"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/wf_magenta_nav"
+            app:strokeWidth="2dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/app_name"
+                android:padding="24dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/yalaza_logo" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/yalaza_surface"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/wf_magenta_nav"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <TextView
+                    style="@style/Yalaza.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/combo_quantity_label" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQtyMinus"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="-"
+                    android:textSize="20sp"
+                    app:cornerRadius="12dp" />
+
+                <TextView
+                    android:id="@+id/tvQty"
+                    style="@style/Yalaza.Title"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="22sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQtyPlus"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="+"
+                    android:textSize="20sp"
+                    app:cornerRadius="12dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            style="@style/Yalaza.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/combo_sauces_title"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkBbq"
+                    style="@style/Yalaza.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/combo_sauce_bbq"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkBuffalo"
+                    style="@style/Yalaza.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/combo_sauce_buffalo"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkGarlic"
+                    style="@style/Yalaza.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/combo_sauce_garlic"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/Yalaza.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/combo_dressings_title"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkRanch"
+                style="@style/Yalaza.Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/combo_dressing_ranch"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBlueCheese"
+                style="@style/Yalaza.Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/combo_dressing_blue"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Yalaza.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/combo_notes_title"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutComboNotes"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxCornerRadiusBottomEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusTopStart="14dp"
+            app:boxStrokeColor="@color/outline_orange"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="@color/outline_orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputComboNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/combo_notes_hint"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lines="4"
+                android:minLines="3"
+                android:textColor="@color/white"
+                android:textColorHint="@color/yalaza_dot_inactive" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnComboWhatsApp"
+            style="@style/Yalaza.Button.WhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="88dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Yalaza.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_screen_title" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxStrokeColor="@color/outline_lime"
+                app:boxStrokeWidth="2dp"
+                app:hintTextColor="@color/outline_lime"
+                app:startIconDrawable="@android:drawable/ic_menu_search"
+                app:startIconTint="@color/wf_lime_nav">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputSearchMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/menu_search_hint"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/yalaza_dot_inactive" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenCombo"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/combo_config_title"
+                android:textAllCaps="false"
+                android:textColor="@color/wf_lime_nav"
+                app:cornerRadius="22dp"
+                app:strokeColor="@color/wf_magenta_nav"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                style="@style/Yalaza.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/categories_title" />
+
+            <include layout="@layout/include_categories_row" />
+
+            <TextView
+                style="@style/Yalaza.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/menu_products_title" />
+
+            <LinearLayout
+                android:id="@+id/menuFeaturedList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/menu_filter"
+        app:backgroundTint="@color/wf_magenta_nav"
+        app:srcCompat="@drawable/ic_filter"
+        app:tint="@color/white" />
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="yalaza_bg">#FF000000</color>
+    <color name="yalaza_surface">#FF2A2A2A</color>
+    <color name="yalaza_surface_light">#FF3D3D3D</color>
+    <color name="yalaza_lime">#E984B300</color>
+    <color name="yalaza_lime_dark">#FF9FD600</color>
+    <color name="yalaza_pink">#FFFF2D8B</color>
+    <color name="yalaza_pink_dark">#FFE02070</color>
+    <color name="yalaza_yellow">#FFFFEB3B</color>
+    <color name="yalaza_orange">#FFFFAB40</color>
+    <color name="yalaza_dot_inactive">#FF666666</color>
+    <color name="yalaza_placeholder">#FF4A4A4A</color>
+    <color name="yalaza_border">#FF555555</color>
+
+    <!-- Wireframe nav / accents -->
+    <color name="wf_magenta_nav">#FFD81B60</color>
+    <color name="wf_lime_nav">#E984B300</color>
+    <color name="wf_orange_nav">#DB8A00</color>
+    <color name="wf_gold_nav">#FFFFC107</color>
+    <color name="wf_orange_stroke">#FFFFA000</color>
+
+    <color name="whatsapp_green">#FF25D366</color>
+    <color name="whatsapp_green_dark">#FF1DA851</color>
+</resources>

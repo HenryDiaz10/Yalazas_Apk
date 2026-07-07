@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="@color/yalaza_bg"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="2dp"
+    tools:strokeColor="@color/yalaza_lime">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/featuredImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/img_alitas_combo" />
+
+        <TextView
+            android:id="@+id/featuredTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="ACEVICHADAS"
+            tools:textColor="@color/yalaza_lime" />
+
+        <TextView
+            android:id="@+id/featuredTagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="14sp"
+            tools:text="¡LA FIRMA DE LA CASA!"
+            tools:textColor="@color/yalaza_lime" />
+
+        <TextView
+            android:id="@+id/featuredDescription"
+            style="@style/Yalaza.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/white"
+            tools:text="Bañadas en leche de tigre cremosa, toque de ají limo y culantro." />
+
+        <TextView
+            android:id="@+id/featuredPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="S/ 16.00"
+            tools:textColor="@color/yalaza_lime" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFeaturedWhatsApp"
+            style="@style/Yalaza.Button.WhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

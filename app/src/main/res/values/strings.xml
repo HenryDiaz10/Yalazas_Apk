@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Yalaza</string>
+    <string name="categories_title">Categorías</string>
+    <string name="featured_title">Destacados</string>
+    <string name="order_whatsapp">Obtener</string>
+    <string name="whatsapp_message">Hola Yalaza, quiero hacer un pedido.</string>
+    <string name="whatsapp_phone_e164" translatable="false">51947228198</string>
+
+    <string name="featured_acvichadas_title">ACEVICHADAS</string>
+    <string name="featured_acvichadas_tagline">¡LA FIRMA DE LA CASA!</string>
+    <string name="featured_acvichadas_desc">Bañadas en leche de tigre cremosa, toque de ají limo y culantro.</string>
+    <string name="featured_acvichadas_price">S/ 16.00</string>
+    <string name="whatsapp_featured_acvichadas">Hola Yalaza, quiero pedir:\n\n*ACEVICHADAS* — ¡LA FIRMA DE LA CASA!\nBañadas en leche de tigre cremosa, toque de ají limo y culantro.\nPrecio: S/ 16.00</string>
+
+    <string name="featured_bbq_title">BBQ</string>
+    <string name="featured_bbq_tagline">¡PA\' CHUPARSE LOS DEDOS!</string>
+    <string name="featured_bbq_desc">¡Bien melosas! Salsa dulce que te va a dejar pegado.</string>
+    <string name="featured_bbq_price">S/ 16.00</string>
+    <string name="whatsapp_featured_bbq">Hola Yalaza, quiero pedir:\n\n*BBQ* — ¡PA\' CHUPARSE LOS DEDOS!\n¡Bien melosas! Salsa dulce que te va a dejar pegado.\nPrecio: S/ 16.00</string>
+
+    <string name="featured_crispy_title">CRISPY</string>
+    <string name="featured_crispy_tagline">EL CLÁSICO DEL BARRIO · PURO CRUNCH</string>
+    <string name="featured_crispy_desc">Empanizado secreto Yalaza, súper crocantes por fuera.</string>
+    <string name="featured_crispy_price">S/ 16.00</string>
+    <string name="whatsapp_featured_crispy">Hola Yalaza, quiero pedir:\n\n*CRISPY* — EL CLÁSICO DEL BARRIO · PURO CRUNCH\nEmpanizado secreto Yalaza, súper crocantes por fuera.\nPrecio: S/ 16.00</string>
+    <string name="whatsapp_menu_wings">Hola Yalaza, quiero pedir Alitas BBQ (desde Menú).</string>
+    <string name="whatsapp_menu_boneless">Hola Yalaza, quiero pedir Boneless (desde Menú).</string>
+    <string name="whatsapp_menu_combo">Hola Yalaza, quiero pedir Combo Yalaza (desde Menú).</string>
+    <string name="whatsapp_contact">Hola Yalaza, escribo desde la sección Contacto.</string>
+
+    <string name="cat_wings">Alitas</string>
+    <string name="cat_boneless">Boneless</string>
+    <string name="cat_drinks">Bebidas</string>
+    <string name="cat_combos">Combos</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_menu">Menú</string>
+    <string name="nav_community">Comunidad</string>
+    <string name="nav_contact">Contacto</string>
+
+    <string name="logo_part_ya">Ya</string>
+    <string name="logo_part_la">la</string>
+    <string name="logo_part_za">za</string>
+
+    <string name="menu_screen_title">Menú</string>
+    <string name="menu_item_wings_title">Alitas BBQ</string>
+    <string name="menu_item_wings_desc">12 piezas · crocantes · salsa a elegir</string>
+    <string name="menu_item_wings_price">S/ 24.90</string>
+    <string name="menu_item_boneless_title">Boneless picantes</string>
+    <string name="menu_item_boneless_desc">10 piezas · nivel medio</string>
+    <string name="menu_item_boneless_price">S/ 22.90</string>
+    <string name="menu_item_combo_title">Combo Yalaza</string>
+    <string name="menu_item_combo_desc">Alitas + papas + bebida</string>
+    <string name="menu_item_combo_price">S/ 35.90</string>
+
+    <string name="community_screen_title">Comunidad</string>
+    <string name="community_intro">Reseñas y fotos de la familia Yalaza.</string>
+    <string name="community_post1_user">@dulce_snacks</string>
+    <string name="community_post1_text">Las alitas picantes están 🔥. Volveré seguro.</string>
+    <string name="community_post2_user">@team_limon</string>
+    <string name="community_post2_text">Combo perfecto para ver el partido. Rapidez 10/10.</string>
+    <string name="community_post3_user">@yalaza_fan</string>
+    <string name="community_post3_text">¿Cuándo sacan salsa nueva? ¡Queremos más!</string>
+
+    <string name="contact_screen_title">Contacto</string>
+    <string name="contact_address">Av Ramos 309, Imperial 15701</string>
+    <string name="contact_hours">Lun — Dom · 12:00 a 23:00</string>
+    <string name="contact_phone_label">WhatsApp: +51 956 101 358</string>
+    <string name="contact_chat_whatsapp">Obtener</string>
+    <string name="contact_open_instagram">Ver Instagram</string>
+
+    <string name="combo_config_title">Configurador de combos</string>
+    <string name="combo_config_subtitle">Arma tu pedido y envíalo por WhatsApp.</string>
+    <string name="combo_quantity_label">Cantidad de porciones</string>
+    <string name="combo_sauces_title">Salsas</string>
+    <string name="combo_sauce_bbq">BBQ</string>
+    <string name="combo_sauce_buffalo">Buffalo</string>
+    <string name="combo_sauce_garlic">Ajo parmesano</string>
+    <string name="combo_dressings_title">Aderezos</string>
+    <string name="combo_dressing_ranch">Ranch</string>
+    <string name="combo_dressing_blue">Blue cheese</string>
+
+    <string name="menu_search_hint">Buscar en el menú…</string>
+    <string name="menu_filter">Filtros</string>
+    <string name="menu_filter_toast">Filtros: próximamente</string>
+    <string name="community_repost_intro">Repost de clientes (demo).</string>
+    <string name="community_upload_cta">¡Sube tu foto y etiquétanos!</string>
+    <string name="combo_notes_title">Notas</string>
+    <string name="combo_notes_hint">Instrucciones especiales para tu pedido…</string>
+    <string name="combo_copy_wa">Obtener</string>
+    <string name="hero_slide_food">Foto de alitas Yalaza</string>
+    <string name="hero_slide_promo">Promo Yalaza</string>
+    <string name="hero_slide_promo_main">Yalaza — Alitas que te volarán</string>
+    <string name="home_scroll_hint">Desliza para conocernos</string>
+    <string name="home_welcome_slogan">¡Sabor que vuela!</string>
+    <string name="home_welcome_title">Bienvenido a Yalaza</string>
+    <string name="home_welcome_body">No somos un sitio de alitas cualquiera… ¡Esto es Yalaza! Aquí no te servimos una simple alita, te servimos una experiencia que te va a volar con el verdadero sabor urbano en cada una de nuestras piezas, preparadas al momento, crujientes y bañadas en las salsas más brutales.\n\n¿Listo para el antojo? Elige tus favoritas y compruébalo tú mismo.</string>
+    <string name="home_order_now">PEDIR AHORA</string>
+    <string name="menu_products_title">Nuestros platos</string>
+    <string name="contact_map_label">Ubicación</string>
+    <string name="contact_hours_table_title">Horarios</string>
+    <string name="contact_day_week">Lun — Vie</string>
+    <string name="contact_day_sat">Sáb</string>
+    <string name="contact_day_sun">Dom</string>
+    <string name="contact_time_week">12:00 — 23:00</string>
+    <string name="contact_time_weekend">12:00 — 00:00</string>
+
+    <string-array name="community_handles">
+        <item>@yalaza_fan</item>
+        <item>@alitas_lima</item>
+        <item>@combo_king</item>
+        <item>@mesa_12</item>
+        <item>@salsa_picante</item>
+        <item>@familia_r</item>
+        <item>@foodie_pe</item>
+        <item>@wings_lover</item>
+        <item>@delivery_ok</item>
+        <item>@noche_yalaza</item>
+        <item>@parrilla_mix</item>
+        <item>@cliente_fiel</item>
+    </string-array>
+</resources>
